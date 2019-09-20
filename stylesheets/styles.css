@@ -164,16 +164,6 @@ h6 {
   font-family: "Nunito", sans-serif; /* Set drillup button font */
 }
 
-/* League: Team news */
-#team-news > .chart-stage > .bootstrap-table > .table > thead {
-  color: #ECF0F1; /* Set table header font color */
-}
-@media (max-width: 767px) {
-  .dashboard-column > #team-news > .chart-stage > .table > thead {
-    color: #ECF0F1; /* Set table header font color for mobile */
-  }
-}
-
 /* League: Price changes */
 #price-changes > .chart-stage > .bootstrap-table > .table > thead {
   color: #3498DB; /* Set table header font color */
