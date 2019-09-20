@@ -1,0 +1,211 @@
+/* Overall styling */
+body {
+  color: #BDC3C7; /* Set overall font color */
+  background-color: #19232D; /* Set background color */
+  font-family: "Nunito", sans-serif; /* Set overall font */
+  font-size: 16px; /* Set overall font size */
+}
+
+/* Navigation bar */
+.navbar-inverse {
+  background-color: #19232D; /* Set navbar background color */
+  border-width: 0; /* Remove navbar border */
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  background-color: #FF2D55; /* Set navbar item hover background color */
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #4F6F8F; /* Set navbar item active background color */
+}
+.navbar-inverse > .container-fluid > .navbar-collapse {
+  border-width: 0; /* Remove navbar border for mobile */
+  font-weight: 700; /* Set navbar item font weight */
+}
+.navbar-inverse .navbar-toggle:hover {
+  background-color: #34495E; /* Set navbar button hover background color for mobile */
+}
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #19232D; /* Set navbar button focus background color for mobile */
+}
+.navbar-inverse > .container-fluid > .navbar-header > .navbar-brand {
+  color: #FF2D55; /* Set navbar title font color */
+  font-weight: 900; /* Set navbar title font weight */
+  margin-left: -22px; /* Set distance between title and logo */
+}
+@media (max-width: 767px) {
+  .navbar-logo img {
+    margin-right: 0; /* Remove right margin from logo on mobile */
+    padding-left: 15px; /* Adjust left padding for logo on mobile */
+  }
+  .navbar-inverse > .container-fluid > .navbar-header > .navbar-brand {
+    margin-left: -10px; /* Set distance between title and logo on mobile */
+  }
+}
+
+/* Sidebar */
+.section > .sidebar {
+  background-color: #19232D; /* Set sidebar background color */
+  border-width: 0; /* Remove sidebar border */
+}
+@media (max-width: 767px) {
+  .level2 > div:first-child {
+    background-color: #19232D; /* Set sidebar background color for mobile */
+    border-width: 0; /* Remove sidebar border for mobile */
+  }
+}
+.section > .sidebar > form > .table {
+  margin: 20px auto 0; /* Align sidebar table to center */
+  width: 70%; /* Reduce sidebar table width */
+}
+.section > .sidebar > form > .table > thead {
+  display: none; /* Remove sidebar table header */
+}
+.section > .sidebar > form > .table > tbody > tr > td {
+  border-color: #2C3E50; /* Set sidebar table line color */
+  font-size: 15px; /* Set sidebar table content font size */
+  font-weight: 700; /* Set sidebar table content font weight */
+  height: 50px; /* Set sidebar table cell height */
+  vertical-align: middle; /* Align sidebar table content to middle */
+}
+.section > .sidebar > form > .table > tbody > tr:first-child > td {
+  border: none; /* Remove sidebar table top border */
+}
+@media (max-width: 767px) {
+  .dashboard-column > .level3:first-child > .bootstrap-table > .table {
+    margin: 10px auto 0; /* Align sidebar table to center on mobile */
+    width: 90%; /* Reduce sidebar table width on mobile */
+  }
+  .dashboard-column > .level3:first-child > .bootstrap-table > .table > thead {
+    color: #ECF0F1; /* Set sidebar table header font color on mobile */
+  }
+  .dashboard-column > .level3:first-child > .bootstrap-table > .table > tbody > tr > td {
+    border-color: #2C3E50; /* Set sidebar table line color on mobile */
+    font-size: 15px; /* Set sidebar table content font size on mobile */
+    font-weight: 400; /* Set sidebar table content font weight on mobile */
+    vertical-align: middle; /* Align sidebar table content to middle on mobile */
+  }
+}
+
+/* Panels */
+.section > .level3 > .chart-title {
+  display: none; /* Remove panel chart title */
+}
+.dashboard-row > .level3 > .chart-stage {
+  background-color: #2C3E50; /* Set panel background color */
+}
+.dashboard-row > .level3 {
+  border-width: 0; /* Remove panel border */
+}
+.chart-shim {
+  top: 0; /* Remove panel top padding */
+}
+@media (max-width: 767px) {
+  .dashboard-column > .level3:not(:first-child) > .chart-stage {
+    background-color: #2C3E50; /* Set panel background color for mobile */
+  }
+  .dashboard-column > .level3:not(:first-child) {
+    border-width: 0; /* Remove panel border for mobile */
+  }
+}
+
+/* Panel headers */
+.panel-header {
+  align-items: center; /* Align panel header items to center */
+  color: #ECF0F1; /* Set panel header font color */
+  display: flex; /* Set panel header display to flex */
+  padding-bottom: 5px; /* Adjust bottom padding for panel header */
+  vertical-align: middle; /* Align panel header items to middle */
+}
+.panel-header > .glyphicon {
+  font-size: 20px; /* Set panel header icon size */
+  padding: 0 10px 3px 5px; /* Adjust padding for panel header icon */
+}
+h6 {
+  font-family: "Nunito", sans-serif; /* Set panel header font */
+  font-size: 18px; /* Set panel header font size */
+  font-weight: 900; /* Set panel header font weight */
+  letter-spacing: 0.1em; /* Set panel header letter spacing */
+}
+
+/* Tables */
+.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > thead {
+  background: transparent; /* Remove table header background color */
+}
+.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > thead > tr:first-child > th {
+  border-width: 0; /* Remove table header border */
+}
+.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > tbody > tr > td {
+  border-color: #19232D; /* Set table row border color */
+}
+.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > tbody > tr:first-child > td {
+  border: none; /* Remove sidebar table top border */
+}
+@media (max-width: 767px) {
+  .dashboard-column > .level3 > .chart-stage > .table {
+    margin: 0 auto; /* Align table to center on mobile */
+    width: 90%; /* Reduce table width on mobile */
+  }
+  .dashboard-column > .level3 > .chart-stage > .table > thead {
+    background: transparent; /* Remove table header background color for mobile */
+  }
+  .dashboard-column > .level3 > .chart-stage > .table > thead > tr:first-child > th {
+    border-width: 0; /* Remove table header border for mobile */
+  }
+}
+
+/* Highcharts */
+.highcharts-drillup-button > .highcharts-button-box {
+  fill: #BDC3C7; /* Set drillup button background color */
+  stroke-width: 0; /* Remove drillup button border */
+}
+.highcharts-drillup-button > text {
+  font-family: "Nunito", sans-serif; /* Set drillup button font */
+}
+
+/* League: Team news */
+#team-news > .chart-stage > .bootstrap-table > .table > thead {
+  color: #ECF0F1; /* Set table header font color */
+}
+@media (max-width: 767px) {
+  .dashboard-column > #team-news > .chart-stage > .table > thead {
+    color: #ECF0F1; /* Set table header font color for mobile */
+  }
+}
+
+/* League: Price changes */
+#price-changes > .chart-stage > .bootstrap-table > .table > thead {
+  color: #3498DB; /* Set table header font color */
+}
+@media (max-width: 767px) {
+  .dashboard-column > #price-changes > .chart-stage > .table > thead {
+    color: #3498DB; /* Set table header font color for mobile */
+  }
+}
+
+/* Deprecated: Price change table */
+#price-changes-table > .chart-stage > .bootstrap-table > .table > thead > tr > th:first-child {
+  width: 45%; /* Adjust table column width */
+}
+#price-changes-table > .chart-stage > .bootstrap-table > .table > thead > tr > th:second-child {
+  width: 45%; /* Adjust table column width */
+}
+@media (max-width: 767px) {
+  .dashboard-column > #price-changes-table > .chart-stage > .table > thead > tr > th:first-child {
+    width: 45%; /* Adjust table column width for mobile */
+  }
+  .dashboard-column > #price-changes-table > .chart-stage > .table > thead > tr > th:second-child {
+    width: 45%; /* Adjust table column width for mobile */
+  }
+}
+
+/* Deprecated: Injuries */
+#injuries > .chart-stage > .bootstrap-table > .table > thead {
+  color: #E74C3C; /* Set table header font color */
+}
+@media (max-width: 767px) {
+  .dashboard-column > #injuries > .chart-stage > .table > thead {
+    color: #E74C3C; /* Set table header font color for mobile */
+  }
+}
