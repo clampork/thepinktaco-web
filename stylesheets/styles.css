@@ -115,7 +115,7 @@ body {
   align-items: center; /* Align panel header items to center */
   color: #ECF0F1; /* Set panel header font color */
   display: flex; /* Set panel header display to flex */
-  padding-bottom: 5px; /* Adjust bottom padding for panel header */
+  padding: 5px; /* Adjust bottom padding for panel header */
   vertical-align: middle; /* Align panel header items to middle */
 }
 .panel-header > .glyphicon {
