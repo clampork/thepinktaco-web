@@ -110,38 +110,8 @@ h6 {
   font-family: "Nunito", sans-serif; /* Set drillup button font */
 }
 
-/* League: Price changes */
-#price-changes > .chart-stage > .bootstrap-table > .table > thead {
-  color: #3498DB; /* Set table header font color */
-}
-@media (max-width: 767px) {
-  .dashboard-column > #price-changes > .chart-stage > .table > thead {
-    color: #3498DB; /* Set table header font color for mobile */
-  }
-}
-
-/* Deprecated: Price change table */
-#price-changes-table > .chart-stage > .bootstrap-table > .table > thead > tr > th:first-child {
-  width: 45%; /* Adjust table column width */
-}
-#price-changes-table > .chart-stage > .bootstrap-table > .table > thead > tr > th:second-child {
-  width: 45%; /* Adjust table column width */
-}
-@media (max-width: 767px) {
-  .dashboard-column > #price-changes-table > .chart-stage > .table > thead > tr > th:first-child {
-    width: 45%; /* Adjust table column width for mobile */
-  }
-  .dashboard-column > #price-changes-table > .chart-stage > .table > thead > tr > th:second-child {
-    width: 45%; /* Adjust table column width for mobile */
-  }
-}
-
-/* Deprecated: Injuries */
-#injuries > .chart-stage > .bootstrap-table > .table > thead {
-  color: #E74C3C; /* Set table header font color */
-}
-@media (max-width: 767px) {
-  .dashboard-column > #injuries > .chart-stage > .table > thead {
-    color: #E74C3C; /* Set table header font color for mobile */
-  }
+/* League: Team news */
+tbody > tr > td[colspan="5"] {
+  background-color: #BDC3C7; /* Set expansion row background color */
+  border: 0; /* Remove expansion row border */
 }
