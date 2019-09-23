@@ -48,43 +48,15 @@ body {
 .section > .sidebar {
   background-color: #19232D; /* Set sidebar background color */
   border-width: 0; /* Remove sidebar border */
+  padding-top: 10px; /* Set sidebar top padding */
+}
+.dataTables_wrapper > .dataTables_scroll > .dataTables_scrollBody {
+  border: 0; /* Remove sidebar table border */
 }
 @media (max-width: 767px) {
   .level2 > div:first-child {
     background-color: #19232D; /* Set sidebar background color for mobile */
     border-width: 0; /* Remove sidebar border for mobile */
-  }
-}
-.section > .sidebar > form > .table {
-  margin: 20px auto 0; /* Align sidebar table to center */
-  width: 70%; /* Reduce sidebar table width */
-}
-.section > .sidebar > form > .table > thead {
-  display: none; /* Remove sidebar table header */
-}
-.section > .sidebar > form > .table > tbody > tr > td {
-  border-color: #2C3E50; /* Set sidebar table line color */
-  font-size: 15px; /* Set sidebar table content font size */
-  font-weight: 700; /* Set sidebar table content font weight */
-  height: 50px; /* Set sidebar table cell height */
-  vertical-align: middle; /* Align sidebar table content to middle */
-}
-.section > .sidebar > form > .table > tbody > tr:first-child > td {
-  border: none; /* Remove sidebar table top border */
-}
-@media (max-width: 767px) {
-  .dashboard-column > .level3:first-child > .bootstrap-table > .table {
-    margin: 10px auto 0; /* Align sidebar table to center on mobile */
-    width: 90%; /* Reduce sidebar table width on mobile */
-  }
-  .dashboard-column > .level3:first-child > .bootstrap-table > .table > thead {
-    color: #ECF0F1; /* Set sidebar table header font color on mobile */
-  }
-  .dashboard-column > .level3:first-child > .bootstrap-table > .table > tbody > tr > td {
-    border-color: #2C3E50; /* Set sidebar table line color on mobile */
-    font-size: 15px; /* Set sidebar table content font size on mobile */
-    font-weight: 400; /* Set sidebar table content font weight on mobile */
-    vertical-align: middle; /* Align sidebar table content to middle on mobile */
   }
 }
 
@@ -127,32 +99,6 @@ h6 {
   font-size: 16px; /* Set panel header font size */
   font-weight: 900; /* Set panel header font weight */
   letter-spacing: 0.1em; /* Set panel header letter spacing */
-}
-
-/* Tables */
-.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > thead {
-  background: transparent; /* Remove table header background color */
-}
-.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > thead > tr:first-child > th {
-  border-width: 0; /* Remove table header border */
-}
-.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > tbody > tr > td {
-  border-color: #19232D; /* Set table row border color */
-}
-.dashboard-row > .level3 > .chart-stage > .bootstrap-table > .table > tbody > tr:first-child > td {
-  border: none; /* Remove sidebar table top border */
-}
-@media (max-width: 767px) {
-  .dashboard-column > .level3 > .chart-stage > .table {
-    margin: 0 auto; /* Align table to center on mobile */
-    width: 90%; /* Reduce table width on mobile */
-  }
-  .dashboard-column > .level3 > .chart-stage > .table > thead {
-    background: transparent; /* Remove table header background color for mobile */
-  }
-  .dashboard-column > .level3 > .chart-stage > .table > thead > tr:first-child > th {
-    border-width: 0; /* Remove table header border for mobile */
-  }
 }
 
 /* Highcharts */
