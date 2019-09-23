@@ -111,7 +111,7 @@ h6 {
 }
 
 /* League: Team news */
-tbody > tr > td[colspan="5"] {
+tbody > tr > td[colspan="4"] {
   background-color: #BDC3C7; /* Set expansion row background color */
   border: 0; /* Remove expansion row border */
 }
