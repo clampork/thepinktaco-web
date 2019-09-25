@@ -45,6 +45,10 @@ body {
 }
 
 /* Sidebar */
+.sidebar-header {
+  color: #ECF0F1;
+  text-align:center;
+}
 .section > .sidebar {
   background-color: #19232D; /* Set sidebar background color */
   border-width: 0; /* Remove sidebar border */
