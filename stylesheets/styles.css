@@ -91,16 +91,16 @@ body {
   align-items: center; /* Align panel header items to center */
   color: #ECF0F1; /* Set panel header font color */
   display: flex; /* Set panel header display to flex */
-  padding: 5px; /* Adjust bottom padding for panel header */
+  padding: 5px 5px 0; /* Adjust padding for panel header */
   vertical-align: middle; /* Align panel header items to middle */
 }
 .panel-header > .glyphicon {
-  font-size: 20px; /* Set panel header icon size */
+  font-size: 18px; /* Set panel header icon size */
   padding: 0 10px 3px 5px; /* Adjust padding for panel header icon */
 }
 h6 {
   font-family: "Nunito", sans-serif; /* Set panel header font */
-  font-size: 16px; /* Set panel header font size */
+  font-size: 14px; /* Set panel header font size */
   font-weight: 900; /* Set panel header font weight */
   letter-spacing: 0.1em; /* Set panel header letter spacing */
 }
@@ -118,4 +118,10 @@ h6 {
 tbody > tr > td[colspan="4"] {
   background-color: #6C777F; /* Set expansion row background color */
   border: 0; /* Remove expansion row border */
+}
+
+/* Insights: Sidebar */
+.insights {
+  color: #FF2D55;
+  font-weight: 700;
 }
