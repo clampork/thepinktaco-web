@@ -1,127 +1,112 @@
-/* Overall styling */
+/* Overall */
 body {
-  color: #BDC3C7; /* Set overall font color */
-  background-color: #19232D; /* Set background color */
+  color: #ECF0F1; /* Set overall font color to white */
+  background-color: #19232D; /* Set overall background color to black */
   font-family: "Nunito", sans-serif; /* Set overall font */
-  font-size: 14px; /* Set overall font size */
+  font-size: 14px; /* Set overall font size to 14px */
 }
 
-/* Navigation bar */
+/* Shared: Navigation bar */
 .navbar-inverse {
-  background-color: #19232D; /* Set navbar background color */
-  border-width: 0; /* Remove navbar border */
+  background-color: #19232D; /* Set navbar background color to black */
+  border: 0; /* Remove navbar border */
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #FF2D55; /* Set navbar item hover background color */
+  background-color: #FF2D55; /* Set navbar item hover background color to pink */
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: #4F6F8F; /* Set navbar item active background color */
+  background-color: #4F6F8F; /* Set navbar item active background color to lmadison */
 }
 .navbar-inverse > .container-fluid > .navbar-collapse {
-  border-width: 0; /* Remove navbar border for mobile */
-  font-weight: 700; /* Set navbar item font weight */
+  border: 0; /* Remove navbar border on mobile */
+  font-weight: 700; /* Set navbar item font weight to bold */
 }
 .navbar-inverse .navbar-toggle:hover {
-  background-color: #34495E; /* Set navbar button hover background color for mobile */
+  background-color: #2C3E50; /* Set navbar button hover background color to madison on mobile */
 }
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #19232D; /* Set navbar button focus background color for mobile */
+  background-color: #19232D; /* Set navbar button focus background color to black on mobile */
 }
 .navbar-inverse > .container-fluid > .navbar-header > .navbar-brand {
-  color: #FF2D55; /* Set navbar title font color */
-  font-weight: 900; /* Set navbar title font weight */
+  color: #FF2D55; /* Set navbar title font color to pink */
+  font-weight: 900; /* Set navbar title font weight to black */
   margin-left: -22px; /* Set distance between title and logo */
 }
 @media (max-width: 767px) {
   .navbar-logo img {
     margin-right: 0; /* Remove right margin from logo on mobile */
-    padding-left: 15px; /* Adjust left padding for logo on mobile */
+    padding-left: 15px; /* Adjust logo left padding on mobile */
   }
   .navbar-inverse > .container-fluid > .navbar-header > .navbar-brand {
     margin-left: -10px; /* Set distance between title and logo on mobile */
   }
 }
 
-/* Sidebar */
-.sidebar-header {
-  color: #ECF0F1;
-  text-align:center;
-}
+/* Shared: Sidebar */
 .section > .sidebar {
-  background-color: #19232D; /* Set sidebar background color */
-  border-width: 0; /* Remove sidebar border */
-  padding-top: 10px; /* Set sidebar top padding */
-}
-.dataTables_wrapper > .dataTables_scroll > .dataTables_scrollBody {
-  border: 0; /* Remove sidebar table border */
+  background-color: #19232D; /* Set sidebar background color to black */
+  border: 0; /* Remove sidebar border */
+  padding-top: 10px; /* Adjust sidebar top padding */
 }
 @media (max-width: 767px) {
   .level2 > div:first-child {
-    background-color: #19232D; /* Set sidebar background color for mobile */
-    border-width: 0; /* Remove sidebar border for mobile */
+    background-color: #19232D; /* Set sidebar background color to black on mobile */
+    border: 0; /* Remove sidebar border on mobile */
   }
 }
+.sb-container {
+  text-align: center; /* Set alignment of sidebar container to center */
+}
 
-/* Panels */
+/* Shared: Panels */
 .section > .level3 > .chart-title {
   display: none; /* Remove panel chart title */
 }
 .dashboard-row > .level3 > .chart-stage {
-  background-color: #2C3E50; /* Set panel background color */
+  background-color: #2C3E50; /* Set panel background color to madison */
 }
 .dashboard-row > .level3 {
-  border-width: 0; /* Remove panel border */
+  border: 0; /* Remove panel border */
 }
 .chart-shim {
   top: 0; /* Remove panel top padding */
 }
 @media (max-width: 767px) {
   .dashboard-column > .level3:not(:first-child) > .chart-stage {
-    background-color: #2C3E50; /* Set panel background color for mobile */
+    background-color: #2C3E50; /* Set panel background color to madison on mobile */
+    border-radius: 5px; /* Set panel border radius to 10px on mobile */
   }
   .dashboard-column > .level3:not(:first-child) {
-    border-width: 0; /* Remove panel border for mobile */
+    background-color: #19232D; /* Set panel container background color to black on mobile */
+    border: 0; /* Remove panel border on mobile */
   }
 }
-
-/* Panel headers */
 .panel-header {
-  align-items: center; /* Align panel header items to center */
-  color: #ECF0F1; /* Set panel header font color */
-  display: flex; /* Set panel header display to flex */
-  padding: 5px 5px 0; /* Adjust padding for panel header */
-  vertical-align: middle; /* Align panel header items to middle */
+  color: #ECF0F1; /* Set sidebar panel header font color */
+  font-family: "Nunito", sans-serif; /* Set sidebar panel header font */
+  font-size: 14px; /* Set sidebar panel header font size */
+  font-weight: 900; /* Set sidebar panel header font weight */
+  letter-spacing: 0.1em; /* Set sidebar panel header letter spacing */
 }
-.panel-header > .glyphicon {
-  font-size: 18px; /* Set panel header icon size */
-  padding: 0 10px 3px 5px; /* Adjust padding for panel header icon */
-}
-h6 {
-  font-family: "Nunito", sans-serif; /* Set panel header font */
-  font-size: 14px; /* Set panel header font size */
-  font-weight: 900; /* Set panel header font weight */
-  letter-spacing: 0.1em; /* Set panel header letter spacing */
+.panel-container {
+  padding-left: 7px; /* Adjust left padding for panel header */
+  padding-top: 12px; /* Adjust top padding for panel header */
 }
 
-/* Highcharts */
-.highcharts-drillup-button > .highcharts-button-box {
-  fill: #BDC3C7; /* Set drillup button background color */
-  stroke-width: 0; /* Remove drillup button border */
+/* Shared: DataTables */
+.dataTables_wrapper > .dataTables_scroll > .dataTables_scrollBody {
+  border: 0; /* Remove table border */
 }
-.highcharts-drillup-button > text {
-  font-family: "Nunito", sans-serif; /* Set drillup button font */
-}
-
-/* League: Team news */
 tbody > tr > td[colspan="4"] {
-  background-color: #6C777F; /* Set expansion row background color */
-  border: 0; /* Remove expansion row border */
+  background-color: #1D6FA5; /* Set expansion row background color to dark blue */
+  border: 0 !important; /* Remove expansion row border */
+  border-radius: 3px; /* Set expansion row border radius to 3px */
 }
 
 /* Insights: Sidebar */
-.insights {
-  color: #FF2D55;
-  font-weight: 700;
+.i-sb-emp {
+  color: #FF2D55; /* Set sidebar emphasis color to pink */
+  font-weight: 700; /* Set sidebar font weight to bold */
 }
